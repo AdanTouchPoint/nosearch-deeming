@@ -476,11 +476,11 @@ setTweetBox2([])
   
     },[tweetBatch])
     return (
-        <div>
+        <div className='mp-table-list'>
             {mp[0] ? (
 
             <div>
-                <div className=''>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[0]?.name} {mp[0]?.lastName}</h3>
                     
                 <input  type="checkbox" value={mp[0]?.email} onClick={checkBox0Handled} id={0} name={mp[0]?.twitter} />
@@ -492,7 +492,7 @@ setTweetBox2([])
             }
             {mp[1] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[1]?.name} {mp[1]?.lastName}</h3>
                 <input  type="checkbox" value={mp[1]?.email} onClick={checkBox1Handled} id={1} name={mp[1]?.twitter} />
                     
@@ -503,12 +503,12 @@ setTweetBox2([])
 
             {mp[2] ? (
                 <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[2]?.name} {mp[2]?.lastName}</h3>
                     
+                <input  type="checkbox" value={mp[2]?.email} onClick={checkBox2Handled} id={2} name={mp[2]?.twitter} />
                 </div>
                 
-                <input  type="checkbox" value={mp[2]?.email} onClick={checkBox2Handled} id={2} name={mp[2]?.twitter} />
             </div>
                 ): <></>}
 
@@ -516,182 +516,182 @@ setTweetBox2([])
             {mp[3] ? (
 
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[3]?.name} {mp[3]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[3]?.email} onClick={checkBox3Handled} id={3} name={mp[3]?.twitter} />
+                </div>
             </div>
             ) : <></>
 
             }
             {mp[4] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[4]?.name} {mp[4]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[4]?.email} onClick={checkBox4Handled} id={4} name={mp[4]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[5] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[5]?.name} {mp[5]?.lastName}</h3>
+                <input  type="checkbox" value={mp[5]?.email} onClick={checkBox5Handled} id={5} name={mp[5]?.twitter} />
                     
                 </div>
-                <input  type="checkbox" value={mp[5]?.email} onClick={checkBox5Handled} id={5} name={mp[5]?.twitter} />
             </div>
 
             ) : <></>}
             {mp[6] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[6]?.name} {mp[6]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[6]?.email} onClick={checkBox6Handled} id={6} name={mp[6]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[7] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[7]?.name} {mp[7]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[7]?.email} onClick={checkBox7Handled} id={7} name={mp[7]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[8] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[8]?.name} {mp[8]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[8]?.email} onClick={checkBox8Handled} id={8} name={mp[8]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[9] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[9]?.name} {mp[9]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[9]?.email} onClick={checkBox9Handled} id={9} name={mp[9]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[10] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[10]?.name} {mp[10]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[10]?.email} onClick={checkBox10Handled} id={10} name={mp[10]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[11] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[11]?.name} {mp[11]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[11]?.email} onClick={checkBox11Handled} id={11} name={mp[11]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[12] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[12]?.name} {mp[12]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[12]?.email} onClick={checkBox12Handled} id={12} name={mp[12]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[13] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[13]?.name} {mp[13]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[13]?.email} onClick={checkBox13Handled} id={13} name={mp[13]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[14] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[14]?.name} {mp[14]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[14]?.email} onClick={checkBox14Handled} id={14} name={mp[14]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[15] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[15]?.name} {mp[15]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[15]?.email} onClick={checkBox15Handled} id={15} name={mp[15]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[16] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[16]?.name} {mp[16]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[16]?.email} onClick={checkBox16Handled} id={16} name={mp[16]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[17] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[17]?.name} {mp[17]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[17]?.email} onClick={checkBox17Handled} id={17} name={mp[17]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[18] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[18]?.name} {mp[18]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[18]?.email} onClick={checkBox18Handled} id={18} name={mp[18]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[19] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[19]?.name} {mp[19]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[19]?.email} onClick={checkBox19Handled} id={19} name={mp[19]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
             {mp[20] ? (
             <div>
-                <div>
+                <div className='list-mp-row'>
                     <h3 className='capitalize-style'> {mp[20]?.name} {mp[20]?.lastName}</h3>
                     
-                </div>
                 <input  type="checkbox" value={mp[20]?.email} onClick={checkBox20Handled} id={20} name={mp[20]?.twitter} />
+                </div>
             </div>
 
             ) : <></>}
