@@ -48,8 +48,8 @@ const MainForm = ({
       ...dataUser,
       [e.target.name]: e.target.value,
     });
-    console.log(e.target.value);
-    console.log(dataUser);
+    // console.log(e.target.value);
+    // console.log(dataUser);
   };
   const { zipCode, emailUser } = dataUser;
 
@@ -88,7 +88,7 @@ const MainForm = ({
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         //setMp(mps)
         setMp(result.data);
         setShowLoadSpin(false);
@@ -107,19 +107,19 @@ const MainForm = ({
       requestOptions
     );
     const datos = await data.json();
-    console.log(datos.data, "datos.data");
+    // console.log(datos.data, "datos.data");
     setMainData(datos);
-    console.log(mainData);
+    //console.log(mainData);
   };
 
   useEffect(() => {
     fetchData().catch((error) => console.error(error));
 
-    console.log(mainData);
+    // console.log(mainData);
   }, []);
-  console.log(dataUser);
-  console.log(mp, "log de estado mp");
-  console.log(mainData, "mainData fuera antes del return");
+  // console.log(dataUser);
+  // console.log(mp, "log de estado mp");
+  // console.log(mainData, "mainData fuera antes del return");
   if (!mainData) return "loading datos";
   if (!mp) return "loading datos";
   return (

@@ -26,12 +26,12 @@ function App() {
       requestOptions
     );
     const datos = await data.json();
-    console.log(datos.data, "datos.data-email");
+    // console.log(datos.data, "datos.data-email");
 
     const payload = datos.data.docs[0].content;
     if (payload.length > 0) {
       const txt = payload.map((el) => {
-        console.log(el.children[0].text);
+        // console.log(el.children[0].text);
         return el.children[0].text + `\n`;
       });
       let sub = datos.data.docs[0].subject;
@@ -41,8 +41,8 @@ function App() {
           : "Introduzca un texto sugerido";
       dataUser.subject =
         sub.length > 0 ? sub : "Por favor introduzca un asunto del correos";
-      console.log();
-      console.log(txt);
+      // console.log();
+      // console.log(txt);
       return txt;
     }
   };
@@ -50,7 +50,7 @@ function App() {
   useEffect(() => {
     fetchData().catch((error) => console.error(error));
 
-    console.log(dataUser);
+    // console.log(dataUser);
   }, []);
 
   return (

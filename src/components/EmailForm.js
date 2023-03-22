@@ -64,7 +64,7 @@ const EmailForm = ({
     }
     setError(false);
     const name = dataUser.userName.split(" ");
-    console.log(allDataIn);
+    // console.log(allDataIn);
     const payload = await axios.post(
       `https://payload-demo-tpm.herokuapp.com/batch-email?to=${allDataIn}&subject=${
         dataUser.subject
@@ -101,9 +101,9 @@ const EmailForm = ({
     setShowFindForm(false);
     setShowEmailForm(true);
   };
-  console.log(allDataIn, 'allDataIn')
-  console.log("emailData", emailData);
-  console.log(dataUser, "data user");
+  // console.log(allDataIn, 'allDataIn')
+  // console.log("emailData", emailData);
+  // console.log(dataUser, "data user");
   return (
     <div className={"emailContainer"} hidden={showEmailForm}>
       {error ? (

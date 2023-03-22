@@ -56,7 +56,7 @@ const List = ({allDataIn,setAllDataIn,mp, dataUser,  setEmailData,  setShowFindF
         }
         const data = await fetch(`https://payload-demo-tpm.herokuapp.com/tweets/?clientId=${clientId}`, requestOptions);
         const datos = await data.json()
-        console.log(data)
+        //console.log(data)
         const textoTweet = ` ` + datos.data?.docs[0].Message 
 
         setTweet(textoTweet)
@@ -66,7 +66,7 @@ const List = ({allDataIn,setAllDataIn,mp, dataUser,  setEmailData,  setShowFindF
         fetchData()
         .catch((error)=>console.error(error))
         
-        console.log(tweet, 'tweet state en useeffect')
+        //console.log(tweet, 'tweet state en useeffect')
     },[])
 
 
@@ -465,14 +465,14 @@ setTweetBox2([])
     }
     
  useEffect(() => {
-        console.log(allDataIn)
-        console.log(mp)
+        // console.log(allDataIn)
+        // console.log(mp)
     },[allDataIn])
     
     useEffect(()=>{
         
         const tweetText = `.${tweetBatch} + ${tweet}`
-        console.log(tweetText)
+        //console.log(tweetText)
   
     },[tweetBatch])
     return (
@@ -601,7 +601,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[11]?.name} {mp[11]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[11]?.contact} onClick={checkBox11Handled} id={11} name={mp[11]?.twitter} />
+                <input  type="checkbox" value={mp[11]?.email} onClick={checkBox11Handled} id={11} name={mp[11]?.twitter} />
             </div>
 
             ) : <></>}
@@ -611,7 +611,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[12]?.name} {mp[12]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[12]?.contact} onClick={checkBox12Handled} id={12} name={mp[12]?.twitter} />
+                <input  type="checkbox" value={mp[12]?.email} onClick={checkBox12Handled} id={12} name={mp[12]?.twitter} />
             </div>
 
             ) : <></>}
@@ -621,7 +621,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[13]?.name} {mp[13]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[13]?.contact} onClick={checkBox13Handled} id={13} name={mp[13]?.twitter} />
+                <input  type="checkbox" value={mp[13]?.email} onClick={checkBox13Handled} id={13} name={mp[13]?.twitter} />
             </div>
 
             ) : <></>}
@@ -631,7 +631,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[14]?.name} {mp[14]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[14]?.contact} onClick={checkBox14Handled} id={14} name={mp[14]?.twitter} />
+                <input  type="checkbox" value={mp[14]?.email} onClick={checkBox14Handled} id={14} name={mp[14]?.twitter} />
             </div>
 
             ) : <></>}
@@ -641,7 +641,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[15]?.name} {mp[15]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[15]?.contact} onClick={checkBox15Handled} id={15} name={mp[15]?.twitter} />
+                <input  type="checkbox" value={mp[15]?.email} onClick={checkBox15Handled} id={15} name={mp[15]?.twitter} />
             </div>
 
             ) : <></>}
@@ -651,7 +651,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[16]?.name} {mp[16]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[16]?.contact} onClick={checkBox16Handled} id={16} name={mp[16]?.twitter} />
+                <input  type="checkbox" value={mp[16]?.email} onClick={checkBox16Handled} id={16} name={mp[16]?.twitter} />
             </div>
 
             ) : <></>}
@@ -661,7 +661,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[17]?.name} {mp[17]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[17]?.contact} onClick={checkBox17Handled} id={17} name={mp[17]?.twitter} />
+                <input  type="checkbox" value={mp[17]?.email} onClick={checkBox17Handled} id={17} name={mp[17]?.twitter} />
             </div>
 
             ) : <></>}
@@ -671,7 +671,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[18]?.name} {mp[18]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[18]?.contact} onClick={checkBox18Handled} id={18} name={mp[18]?.twitter} />
+                <input  type="checkbox" value={mp[18]?.email} onClick={checkBox18Handled} id={18} name={mp[18]?.twitter} />
             </div>
 
             ) : <></>}
@@ -681,7 +681,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[19]?.name} {mp[19]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[19]?.contact} onClick={checkBox19Handled} id={19} name={mp[19]?.twitter} />
+                <input  type="checkbox" value={mp[19]?.email} onClick={checkBox19Handled} id={19} name={mp[19]?.twitter} />
             </div>
 
             ) : <></>}
@@ -691,7 +691,7 @@ setTweetBox2([])
                     <h3 className='capitalize-style'> {mp[20]?.name} {mp[20]?.lastName}</h3>
                     
                 </div>
-                <input  type="checkbox" value={mp[20]?.contact} onClick={checkBox20Handled} id={20} name={mp[20]?.twitter} />
+                <input  type="checkbox" value={mp[20]?.email} onClick={checkBox20Handled} id={20} name={mp[20]?.twitter} />
             </div>
 
             ) : <></>}
