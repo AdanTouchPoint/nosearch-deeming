@@ -114,6 +114,19 @@ display: flex;
   padding:50px;
 
 }
+.list-mp-row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  column-gap: 25px;
+  max-width: 160px;
+}
+.mp-table-list{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 20px;
+
+}
 .list-content-location{
 
     padding-top: 10px;
@@ -151,6 +164,8 @@ display: flex;
 }
 .capitalize-style{
   text-transform: capitalize;
+  font-size: 20px;
+  
 }
 
 @media (max-width: 767px) {
@@ -185,6 +200,19 @@ display: flex;
     row-gap: 20px;
 
   }
+  .mp-table-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+  }
+  .list-mp-row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 100%;
+    column-gap: 25px;
+    
+}
 }
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
@@ -219,4 +247,5 @@ display: flex;
     row-gap: 20px;
 
   }
+  
 }

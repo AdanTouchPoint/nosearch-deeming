@@ -231,13 +231,10 @@ const MainForm = ({
           <div className={"container senators-container"} hidden={showList}>
             <div className="note-container">
               <p>
-                NOTA: Escoja solamente a un representante a la vez. Si ustede
-                desea contactar a otro representante, o enviar más emails al
-                mismo, deberá seleccionar la opción de 'repetir' después de
-                enviar el correo
+              NOTE: Choose a representative, all the selected mp's will be contacted by email
               </p>
             </div>
-            <h2>Representantes</h2>
+            <h2>Representatives</h2>
             <div className="representatives-container">
               {mp.length > 0 ? (
                
