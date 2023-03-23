@@ -177,7 +177,7 @@ const MainForm = ({
             <Form.Group>
               <Form.Control
                 type="email"
-                placeholder="Introduzca su correo electrónico"
+                placeholder="Insert Email Here"
                 name="emailUser"
                 onChange={handleChange}
                 required
@@ -186,7 +186,7 @@ const MainForm = ({
             <Form.Group>
               <Form.Control
                 type="text"
-                placeholder="Digite su código postal y presione ENTER"
+                placeholder="Postcode Here"
                 name="zipCode"
                 onChange={handleChange}
                 required
@@ -234,7 +234,7 @@ const MainForm = ({
               NOTE: Choose a representative, all the selected mp's will be contacted by email
               </p>
             </div>
-            <h2>Representatives</h2>
+            <h2>Select Which MPs to Email:</h2>
             <div className="representatives-container">
               {mp.length > 0 ? (
                
@@ -253,8 +253,8 @@ const MainForm = ({
                 
               ) : (
                 <Alert variant="danger">
-                  No se han encontrado representantes con el código postal que
-                  nos ha proveído
+                 No representatives have been found with the zip code that
+                   has provided us
                 </Alert>
               )}
 
