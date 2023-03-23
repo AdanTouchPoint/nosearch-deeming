@@ -3,7 +3,7 @@ import Loader from "react-loader-spinner";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/cjs/Button";
 import Alert from "react-bootstrap/Alert";
-import axios from "axios";
+//import axios from "axios";
 import List from "./List";
 import mainimage from "../assets/laptop-with-notebook-and-glasses-on-table.jpg";
 //import icon from '../assets/tw.png'
@@ -12,8 +12,8 @@ import EmailForm from "./EmailForm";
 import ThankYou from "./ThankYou";
 import Card from "react-bootstrap/cjs/Card";
 import { Link, animateScroll as scroll } from "react-scroll";
-import { io } from "socket.io-client";
-import mps from "../assets/mps";
+//import { io } from "socket.io-client";
+//import mps from "../assets/mps";
 import {mailerExtracter} from "../assets/mailerExtracter"
 
 const MainForm = ({
