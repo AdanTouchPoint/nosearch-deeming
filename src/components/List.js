@@ -57,7 +57,7 @@ const List = ({allDataIn,setAllDataIn,mp, dataUser,  setEmailData,  setShowFindF
         const data = await fetch(`https://payload-demo-tpm.herokuapp.com/tweets/?clientId=${clientId}`, requestOptions);
         const datos = await data.json()
         //console.log(data)
-        const textoTweet = ` ` + datos.data?.docs[0].Message 
+        const textoTweet = ` ` + (datos.data?.docs[0].Message) ? datos.data?.docs[0].Message : '' 
 
         setTweet(textoTweet)
     }
@@ -465,7 +465,7 @@ setTweetBox2([])
     }
     
  useEffect(() => {
-        // console.log(allDataIn)
+         console.log(allDataIn)
         // console.log(mp)
     },[allDataIn])
     
@@ -721,5 +721,4 @@ setTweetBox2([])
 }
 
 export default List;
-
 

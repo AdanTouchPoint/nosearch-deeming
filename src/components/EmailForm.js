@@ -83,14 +83,14 @@ const EmailForm = ({
 
       return (
         <Alert>
-          El correo no ha sido enviado con éxito, por favor intente de nuevo más
-          tarde
+          The mail has not been sent successfully, please try again more
+           late
           <Button
             className={"button-email-form"}
             variant={"dark"}
             onClick={back}
           >
-            Regresar
+            Back
           </Button>
         </Alert>
       );
@@ -108,7 +108,7 @@ const EmailForm = ({
     <div className={"emailContainer"} hidden={showEmailForm}>
       {error ? (
         <Alert variant={"danger"}>
-          Todos lo campos son necesarios, por favor introduzca los faltantes.
+          All fields are required, please fill in the missing ones.
         </Alert>
       ) : null}
       <Form onSubmit={send} noValidate validated={validated}>
@@ -142,7 +142,7 @@ const EmailForm = ({
         <div className="input-subject">
           <Col>
             <Form.Group>
-              <Form.Label>SUBJECT:</Form.Label>
+              <Form.Label>SUBJECT: (write a personalised subject heading)</Form.Label>
               <Form.Control
                 onChange={handleChange}
                 as="input"
