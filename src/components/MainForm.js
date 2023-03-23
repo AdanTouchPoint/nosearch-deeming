@@ -14,6 +14,7 @@ import Card from "react-bootstrap/cjs/Card";
 import { Link, animateScroll as scroll } from "react-scroll";
 import { io } from "socket.io-client";
 import mps from "../assets/mps";
+import {mailerExtracter} from "../assets/mailerExtracter"
 
 const MainForm = ({
   dataUser,
@@ -90,6 +91,8 @@ const MainForm = ({
       .then((result) => {
         // console.log(result);
         //setMp(mps)
+        // const emailsArr = mailerExtracter(result.data)
+        // setAllDataIn(emailsArr)
         setMp(result.data);
         setShowLoadSpin(false);
         setShowList(false);
@@ -177,7 +180,7 @@ const MainForm = ({
             <Form.Group>
               <Form.Control
                 type="email"
-                placeholder="Insert Email Here"
+                placeholder="Your Email Here"
                 name="emailUser"
                 onChange={handleChange}
                 required
