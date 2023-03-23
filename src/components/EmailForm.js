@@ -115,7 +115,7 @@ const EmailForm = ({
         <div className={"formEmail"}>
           <Col>
             <Form.Group controlId="name">
-              <Form.Label>*Primer nombre y apellido</Form.Label>
+              <Form.Label>First name and Last name</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="Name"
@@ -138,29 +138,11 @@ const EmailForm = ({
             </Form.Group>
           </Col>
         </div>
-        <Col>
-          <Form.Label>PARA: INFORMACIÓN DE LOS REPRESENTANTES</Form.Label>
-        </Col>
-        <div className={"formEmail"}>
-          {allDataIn.map((representative) => (
-            <Col>
-              <Form.Group>
-                <Form.Control
-                  as={"input"}
-                  readOnly
-                  type="text"
-                  placeholder={representative}
-                  name="nameTo"
-                  key={representative}
-                />
-              </Form.Group>
-            </Col>
-          ))}
-        </div>
+        
         <div className="input-subject">
           <Col>
             <Form.Group>
-              <Form.Label>ASUNTO:</Form.Label>
+              <Form.Label>SUBJECT:</Form.Label>
               <Form.Control
                 onChange={handleChange}
                 as="input"
@@ -198,10 +180,10 @@ const EmailForm = ({
           variant={"dark"}
           onClick={send}
         >
-          Enviar
+          Send
         </Button>
         <Button className={"button-email-form"} variant={"dark"} onClick={back}>
-          Regresar
+          Back
         </Button>
       </div>
     </div>
