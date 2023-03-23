@@ -25,14 +25,14 @@ const List = ({allDataIn,setAllDataIn,mp, dataUser,  setEmailData,  setShowFindF
       <h2>MPs</h2>
     <div className='mp-table-list'>
       {mp.map((mp, index) => (
-        <div key={index} className='list-mp-row' >
+        <label key={index} className='list-mp-row' >
           <input
             type='checkbox'
             checked={checklistStates[index]}
             onChange={() => toggleChecklist(index)}
           />
           <h5>{mp.name}</h5>
-        </div>
+        </label>
       ))}
     </div>
       <div className='btn-container-checklist'>
