@@ -704,12 +704,12 @@ setTweetBox2([])
                       
                             <Button
                                 className='list-button'
-                                size={'lg'}
+                                size={'md'}
                                 variant={'dark'}
                                 target={"blank"}
                                 onClick={click}
                             >
-                                Send Email
+                                Proceed to Email
                             </Button>  
                 </div>
                 
