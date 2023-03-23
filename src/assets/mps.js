@@ -1,33 +1,33 @@
 const mps = [
     {
-        name: 'Jon Doe',
+        name: 'Omar',
         address:'Oak`s street',
         state:'México',
         city:'CDMX',
         tweeter:'@tweetertest',
-        contact:'test@test.com',
+        email:'omar.mijangos@touchpointmarketing.mx',
         lastName: '0',
         postalcode: 5561333443,
         party: 'Federal Senators'
     },
     {
-        name: 'Jim Doe',
+        name: 'Adan',
         address:'Pine`s street',
         state:'Nuevo Lión',
         city:'Monterrey',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'adan.mijangos@touchpointmarketing.mx',
         lastName: '0',
         postalcode: 5576678997,
         party: 'Federal Senators'
     },
     {
-        name: 'Joe Doe',
+        name: 'Ruben',
         address:'Cippress hill',
         state:'Puebla',
         city:'Puebla',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'ruben.mejia@touchpointmarketing.mx',
         lastName: '0',
         postalcode: 5545677898,
         party: 'Federal Senators'
@@ -38,7 +38,7 @@ const mps = [
         state:'Michoacan',
         city:'Patzcuaro',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'test@test.com',
         lastName: '0',
         postalcode: 5572244335,
         party: 'Federal Senators'
@@ -49,7 +49,7 @@ const mps = [
         state:'México',
         city:'CDMX',
         tweeter:'@tweetertest',
-        contact:'test@test.com',
+        email:'test@test.com',
         lastName:'2',
         postalcode: 5561333443,
         party: 'Federal MPs'
@@ -60,7 +60,7 @@ const mps = [
         state:'Nuevo Lión',
         city:'Monterrey',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'test@test.com',
         lastName:'2',
         postalcode: 5576678997,
         party: 'Federal MPs'
@@ -71,7 +71,7 @@ const mps = [
         state:'Puebla',
         city:'Puebla',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'test@test.com',
         lastName:'2',
         postalcode: 5545677898,
         party: 'Federal MPs'
@@ -82,7 +82,7 @@ const mps = [
         state:'Michoacan',
         city:'Patzcuaro',
         twitter:'@tweetertest',
-        contact:'test@test.com',
+        email:'test@test.com',
         lastName:'2',
         postalcode: 5572244335,
         party: 'Federal MPs'
