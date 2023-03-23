@@ -465,7 +465,7 @@ setTweetBox2([])
     }
     
  useEffect(() => {
-         console.log(allDataIn)
+         // console.log(allDataIn)
         // console.log(mp)
     },[allDataIn])
     
