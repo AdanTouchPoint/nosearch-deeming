@@ -476,6 +476,7 @@ setTweetBox2([])
   
     },[tweetBatch])
     return (
+      <>
         <div className='mp-table-list'>
             {mp[0] ? (
 
@@ -695,25 +696,27 @@ setTweetBox2([])
             </div>
 
             ) : <></>}
+          </div>
+          <div className='btn-container-checklist'>
             <div className={'buttons'}>
                 <div >
                     
                       
                             <Button
                                 className='list-button'
-                                size={'sm'}
+                                size={'lg'}
                                 variant={'dark'}
                                 target={"blank"}
                                 onClick={click}
                             >
-                                Enviar email
+                                Send Email
                             </Button>  
                 </div>
                 
             </div>
         </div>
         
-        
+        </>
     )
 }
 

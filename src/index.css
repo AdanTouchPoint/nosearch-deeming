@@ -135,7 +135,7 @@ display: flex;
   padding:5px;
 }
 .list-button{
-  max-width: 110px;
+  max-width: 150px;
   width: 100% ;
 }
 .list-notweeter-text{
@@ -166,6 +166,11 @@ display: flex;
   text-transform: capitalize;
   font-size: 20px;
   
+}
+.btn-container-checklist{
+  display: flex;
+  justify-content: center;
+  padding: 50px 0px 0px 0px;
 }
 
 @media (max-width: 767px) {
