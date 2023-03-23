@@ -709,7 +709,7 @@ setTweetBox2([])
                                 target={"blank"}
                                 onClick={click}
                             >
-                                Enviar email
+                                Send Email
                             </Button>  
                 </div>
                 
