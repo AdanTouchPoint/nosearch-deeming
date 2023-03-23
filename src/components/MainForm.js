@@ -89,7 +89,7 @@ const MainForm = ({
     )
       .then((response) => response.json())
       .then((result) => {
-        console.log(result);
+        // console.log(result);
         //setMp(mps)
         // const emailsArr = mailerExtracter(result.data)
         // setAllDataIn(emailsArr)
