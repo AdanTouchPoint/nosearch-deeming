@@ -116,6 +116,7 @@ display: flex;
 }
 .list-mp-row{
   display: flex;
+  flex-direction: row-reverse;
   align-items: center;
   justify-content: space-between;
   column-gap: 25px;

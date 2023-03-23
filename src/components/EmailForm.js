@@ -33,6 +33,7 @@ const EmailForm = ({
       ...emailData,
       [e.target.name]: e.target.value.replace(/\n\r?/g, "<br/>").replace(/#/g, " "),
     });
+   // console.log('allDataIn', allDataIn)
   };
   const { userName } = dataUser;
   const correoEnviado = (respuestaDeExito, dataUseryEmail) => {
