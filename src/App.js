@@ -15,7 +15,23 @@ function App() {
   const [mp, setMp] = useState([]);
   const [senator, setSenator] = useState([]);
   const [clientId, setClientId] = useState(`641b4e853ecc21a6c35d8242`);
+  const [typData, setTypData] = useState({})
+
   const adanCID = "636dadcf2626f92aade6664a";
+
+
+
+  const fetchTYPData = async () => {
+    const requestOptions = {
+        method: 'POST',
+        redirect: 'follow'
+    }
+    const data = await fetch(`https://payload-demo-tpm.herokuapp.com/typ-content/?clientId=${clientId}`, requestOptions);
+    const datos = await data.json()
+     console.log(datos.data, 'datos.data-typ')
+    setTypData(datos)
+}
+
   const fetchData = async () => {
     const requestOptions = {
       method: "POST",
@@ -49,7 +65,7 @@ function App() {
 
   useEffect(() => {
     fetchData().catch((error) => console.error(error));
-
+    fetchTYPData().catch((error) => console.error(error))
     // console.log(dataUser);
   }, []);
 
@@ -64,6 +80,7 @@ function App() {
       senator={senator}
       setSenator={setSenator}
       clientId={clientId}
+      typData={typData}
     />
   );
 }

@@ -24,6 +24,7 @@ const MainForm = ({
   setEmailData,
   emailData,
   clientId,
+  typData
 }) => {
   const [showLoadSpin, setShowLoadSpin] = useState(false);
   const [showList, setShowList] = useState(true);
@@ -176,7 +177,7 @@ const MainForm = ({
           ></Link>
           <Form onSubmit={click} noValidate validated={validated}>
             <h3 className="find-her-mp-text">
-            Find you local MP here:
+           Take Action
             </h3>
             <Form.Group>
               <Form.Control
@@ -286,6 +287,7 @@ const MainForm = ({
         setShowThankYou={setShowThankYou}
         clientId={clientId}
         showThankYou={showThankYou}
+        typData={typData}
       />
     </div>
   );
