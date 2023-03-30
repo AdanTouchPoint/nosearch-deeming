@@ -44,7 +44,7 @@ const EmailForm = ({
         dataUser.zipCode ? dataUser.zipCode : dataUser.state
       }&emailData=${dataUser.emailUser}&representative=${
         allDataIn
-      }&emailMessage=${dataUser.text}&clientId=${clientId}&sended=${respuestaDeExito}`,
+      }&emailMessage=${dataUser.text}&clientId=${clientId}&sended=${respuestaDeExito}&subject=${dataUser.subject}`,
       dataUseryEmail
     );
   };
